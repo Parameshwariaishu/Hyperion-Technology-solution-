@@ -39,6 +39,8 @@ header {
 .fb,
 .twitter {
     padding-left: 10px;
+    color:white;
+    font-size: 15px;
 }
 
 .logo {
@@ -134,9 +136,8 @@ header {
     width: 100%;
     background-color: antiquewhite;
     display: flex;
-    justify-content: center;
+    justify-content:right;
     align-items: center;
-    position: relative;
     background:url(./pic.webp);
     background-size: cover;
 }
@@ -144,15 +145,20 @@ header {
 .name {
     padding-bottom: 90px;
     font-size: 80px;
-    position: absolute;
+    width:55%;
+    /* position: absolute; */
     color: white;
-    left: 42%;
+    /* left: 42%; */
+    display: block;
 }
+
 .abtbtn{
-    position: absolute;
+    /* position: absolute; */
     color: white;
-    left: 42%;
-    top:60%;
+    /* left: 42%; */
+    /* top:60%; */
+    text-align: center;
+    margin: auto;
     background-color:transparent;
     border: 2px solid rgb(3, 30, 85);
     height:40px;
@@ -161,48 +167,65 @@ font-size: 20px;
 text-decoration: none;
 padding-top: 5px;
 }
+.abtbtn1{
+    text-align: center;
+    margin: auto;
+    background-color:transparent;
+color:white;
+border: none;
+font-size: 20px;
+
+}
 .abtbtn:hover{
     cursor: pointer;
     box-shadow: 0px 0px 5px 0px rgb(47, 107, 185);
 }
-@media screen and (min-width:300px) and (max-width:1000px) {
-    .name {
-        padding-bottom: 90px;
-        font-size: 30px;
-        position: absolute;
-        color: white;
-        left: 10%;
-        text-align: center;
-    }
-    .abtbtn{
-        position: absolute;
-        color: white;
-        left: 30%;
-        top:60%;
-        background-color:transparent;
-        border: 2px solid rgb(3, 30, 85);
-        height:40px;
-        width:120px;
-    font-size: 20px;
-    text-decoration: none;
-    padding-top: 5px;
-
+.hype{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
 }
+@media screen and (min-width:300px) and (max-width:600px) {
+    .name {
+width:100%;
+        font-size: 30px;
+   
+        color: white;
+
+        text-align: center;
+    
+    }
+    .hype{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
 }
 @media screen and (min-width:600px) and (max-width:1200px) {
     .name {
-        padding-bottom: 90px;
-        font-size: 50px;
-        position: absolute;
+width:100%;
+        font-size: 60px;
+   
         color: white;
-        left: 12%;
 
+        text-align: center;
+    
     }
-    .abtbtn{ 
-        left: 40%;
+    .hype{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
 
 }
-}
+
 
 /* service */
 
@@ -233,7 +256,7 @@ padding-top: 5px;
 }
 .servicebox{
     width:330px;
-    height:420px;
+    min-height:420px;
     background-color: white;
     padding: 10px;
     /* padding-left: 10px; */

@@ -51,4 +51,7 @@ function toggleParagraph() {
     const paragraph = document.getElementById('listpara12');
     paragraph.style.display = paragraph.style.display === 'none' ? 'block' : 'none';
   }
-
+  function toggleParagraph13() {
+    const paragraph = document.getElementById('listpara13');
+    paragraph.style.display = paragraph.style.display === 'none' ? 'block' : 'none';
+  }
